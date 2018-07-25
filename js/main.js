@@ -283,28 +283,7 @@ $(document).ready(function(){
 });
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-	if (document.body.scrollTop == 0  || document.documentElement.scrollTop == 0) {
-        Command: toastr["error"]("This Version Is Still Being Worked ON!", "Info")
-
-toastr.options = {
-  "closeButton": false,
-  "debug": true,
-  "newestOnTop": true,
-  "progressBar": true,
-  "positionClass": "toast-top-right",
-  "preventDuplicates": true,
-  "onclick": null,
-  "showDuration": "100",
-  "hideDuration": "1000",
-  "timeOut": "99999999",
-  "extendedTimeOut": "1000",
-  "showEasing": "swing",
-  "hideEasing": "linear",
-  "showMethod": "fadeIn",
-  "hideMethod": "fadeOut"
-}
-    }
+function scrollFunction() {	
     if (document.body.scrollTop == 900 || document.documentElement.scrollTop == 900) {
         Command: toastr["info"]("Hover On The Image To get Information!", "Info")
 
